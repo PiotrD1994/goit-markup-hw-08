@@ -1,0 +1,65 @@
+
+.clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &__block {
+        padding: 0 15px;
+    }
+    &__header {
+        font-family: $primaryFont;
+        font-weight: $fontBold;
+        color: $primaryTextColor;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-left: 495px;
+        padding-right: 495px;
+        text-align: center;
+        white-space: nowrap;
+      }
+      &__list {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      &__item {
+        margin-right: 30px;
+      &--last {
+        margin-right: 0px;
+      }
+      }
+      &__logo {
+        padding: 16px 32px;
+        fill: $iconColor;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+         fill: $fourthBackgroundColor; 
+         transition-property: fill;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+        }
+      }
+      &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $iconColor;
+        border-radius: 4px;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            border-color: $thirdTextColor;  
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+        }
+      }
+}

@@ -1,0 +1,48 @@
+
+.description {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &__list {
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0px;
+        list-style: none;
+    }
+    &__item {
+        width: 270px;
+        margin-right: 30px;
+        &--last {
+            margin-right: 0px;
+        }
+      }
+      &__header {
+        font-family: $primaryFont;
+        font-weight: $fontBold;
+        color: $primaryTextColor;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        margin-top: 30px;
+      }
+      &__pictrue {
+        display: inline-block;
+      }
+      &__secondary-container {
+        padding: 25px 100px;
+        background-color: $secondColorBackground;
+      }
+      &__text {
+        font-family: $primaryFont;
+        font-weight: $fontSmall;
+        color: $secondaryTextColor;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin: 0px;
+      }
+    }
+
+
