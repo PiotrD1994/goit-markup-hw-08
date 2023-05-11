@@ -547,10 +547,9 @@
         </div>
       </div>
     </footer>
-    <div class="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-close js-close-menu">
         <svg
-          class="menu-toggle__element"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -564,18 +563,30 @@
           ></path>
         </svg>
       </button>
-      <ul>
-        <li>Agencja</li>
-        <li>Portfolio</li>
-        <li>Kontakt</li>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">Agencja</li>
+        <li class="mobile-menu__item">Portfolio</li>
+        <li class="mobile-menu__item mobile-menu__item--last">Kontakt</li>
       </ul>
-      <a>+48 111 111 111</a>
-      <a>info@devstudio.com</a>
-      <ul>
-        <li><a>Instagram</a></li>
-        <li><a>Twitter</a></li>
-        <li><a>Facebook</a></li>
-        <li>LinkedIn</li>
+      <a href="tel:+48111111111" class="mobile-menu__tel">+48 111 111 111</a>
+      <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+        >info@devstudio.com</a
+      >
+      <ul class="mobile-menu__social-media">
+        <li class="mobile-menu__social-media-item">
+          <a href="" class="mobile-menu__social-media-link">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-media-item">
+          <a href="" class="mobile-menu__social-media-link">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-media-item">
+          <a href="" class="mobile-menu__social-media-link">Facebook</a>
+        </li>
+        <li
+          class="mobile-menu__social-media-item mobile-menu__social-media-item-link--last"
+        >
+          <a href="" class="mobile-menu__social-media-link">LinkedIn</a>
+        </li>
       </ul>
     </div>
     <div class="backdrop is-hidden" data-modal>
