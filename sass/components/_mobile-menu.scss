@@ -2,8 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 2;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -25,6 +25,7 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         margin-bottom: 32px;
+        cursor: pointer;
         &--last {
             margin-bottom: 0px;
         }
