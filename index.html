@@ -205,10 +205,10 @@
             <ul class="personel__list">
               <li class="personel__item">
                 <img
+                  class="personel__pictrue"
                   src="./images/person1.jpg"
+                  srcset="./images/person1@2x.jpg 2x"
                   alt="pictrue of product designer"
-                  width="270"
-                  height="260"
                 />
                 <h4 class="personel__name">John Doe</h4>
                 <p class="personel__position">Product Designer</p>
@@ -253,10 +253,10 @@
               </li>
               <li class="personel__item">
                 <img
-                  src="images/person2.jpg"
+                  class="personel__pictrue"
+                  src="./images/person2.jpg"
+                  srcset="./images/person2@2x.jpg 2x"
                   alt="pictrue of frontend developer"
-                  width="270"
-                  height="260"
                 />
                 <h4 class="personel__name">John Doe</h4>
                 <p class="personel__position">Frontend Developer</p>
@@ -301,10 +301,10 @@
               </li>
               <li class="personel__item">
                 <img
-                  src="images/person3.jpg"
+                  class="personel__pictrue"
+                  src="./images/person3.jpg"
+                  srcset="./images/person3@2x.jpg 2x"
                   alt="pictrue of marketing guy"
-                  width="270"
-                  height="260"
                 />
                 <h4 class="personel__name">John Doe</h4>
                 <p class="personel__position">Marketing</p>
@@ -349,10 +349,10 @@
               </li>
               <li class="personel__item personel__item--last">
                 <img
-                  src="images/person4.jpg"
+                  class="personel__pictrue"
+                  src="./images/person4.jpg"
+                  srcset="./images/person4@2x.jpg 2x"
                   alt="pictrue of UL designer"
-                  width="270"
-                  height="260"
                 />
                 <h4 class="personel__name">John Doe</h4>
                 <p class="personel__position">UI designer</p>
@@ -468,7 +468,7 @@
               </address>
               <a class="contact-footer__link" href="info@example.com"
                 >info@example.com</a
-              ><br />
+              >
               <a class="contact-footer__link" href="tel:+48111111111"
                 >+48 111 111 111</a
               >
@@ -566,9 +566,15 @@
         </svg>
       </button>
       <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">Agencja</li>
-        <li class="mobile-menu__item">Portfolio</li>
-        <li class="mobile-menu__item mobile-menu__item--last">Kontakt</li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--last">
+          <a class="mobile-menu__link" href="">Kontakt</a>
+        </li>
       </ul>
       <a href="tel:+48111111111" class="mobile-menu__tel">+48 111 111 111</a>
       <a href="mailto:info@devstudio.com" class="mobile-menu__mail"

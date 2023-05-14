@@ -34,6 +34,10 @@
             color: $thirdTextColor;
         }
      }
+     &__link {
+        text-decoration: none;
+        color: inherit;
+     }
     &__tel {
         text-decoration: none;
         color: $thirdTextColor;

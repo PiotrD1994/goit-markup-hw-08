@@ -3,6 +3,10 @@ background-color: $primaryColorBackground;
 max-width: 480px;
 margin: auto; 
 }
+@media screen and (min-width: 768px) {
+    .page-title {
+    max-width: 768px;}
+}
 .title-field {
     max-width: 480px;
     height: 100%;

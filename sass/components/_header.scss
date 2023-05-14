@@ -5,15 +5,26 @@ border-bottom: 1px solid $borderLineColor;
 .container {
     width: 480px;
     margin: auto;
+} 
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
 }
 .flex {
     display: flex;
     padding-left: 15px;
+    padding-right: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
     align-items: center;
     justify-content: center;
-  
+}
+@media screen and (min-width: 768px) {
+    .flex {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
 }
 .logo {
     color: $titleBackgroundtColor;
@@ -35,9 +46,112 @@ border-bottom: 1px solid $borderLineColor;
 .nav {
     display: none;
 }
+@media screen and (min-width: 768px) {
+    .nav {
+        display: block;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-left: 83px;
+        margin-right: 101px;
+        width: 284px;
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    } 
+    &__item {
+        margin-right: 60px;
+        &--last {
+            margin-right: 0px;
+        }
+    }
+    &__item-active {
+        position: relative;
+    }
+    &__link {
+        text-decoration: none;
+        color: $primaryTextColor;
+        font-family: $primaryFont;
+        font-size: $fontMedium;
+        font-size: 14px;
+        font-weight: $fontMedium;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $thirdTextColor;
+        }
+        &--active {
+            color: $thirdTextColor;
+                }
+        &--active::after {
+            content: "";
+            position: absolute;
+            background-color: $thirdTextColor;
+            border-radius: 2px;
+            width: 100%;
+            display: block;
+            height: 4px;
+            margin-top: 28px;
+            }       
+    }
+    }
+}
 .contact {
     display: none;
             }
+
+@media screen and (min-width: 768px) {
+    .contact {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    &__item {
+        color: $secondaryTextColor;
+        fill: $secondaryTextColor;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        transition-property: fill, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: $thirdTextColor;
+            color: $thirdTextColor;
+            cursor: pointer;
+        }
+        &--last {
+            margin-bottom: 0px;
+        }
+    } 
+    &__link {
+        font-family: $primaryFont;
+        font-weight: $fontMedium;
+        font-size: 14px;
+        color: inherit;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        margin-left: 8px;
+        display: flex;
+        &:hover,
+        &:focus {
+        color: inherit;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }   
+    &__icon {
+        display: flex;
+    }
+} 
+}          
 .menu-toggle {
     background-color: transparent;
     margin-left: 284px;
@@ -50,3 +164,8 @@ border-bottom: 1px solid $borderLineColor;
         color: $thirdTextColor;
     }
 }            
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
