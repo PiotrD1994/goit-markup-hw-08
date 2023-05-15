@@ -22,8 +22,8 @@ border-bottom: 1px solid $borderLineColor;
 }
 @media screen and (min-width: 768px) {
     .flex {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 }
 .logo {
@@ -43,6 +43,12 @@ border-bottom: 1px solid $borderLineColor;
     padding-bottom: 0px;
     }
 }
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
 .nav {
     display: none;
 }
@@ -53,7 +59,6 @@ border-bottom: 1px solid $borderLineColor;
         padding-bottom: 6px;
         margin-left: 83px;
         margin-right: 101px;
-        width: 284px;
     &__list {
         display: flex;
         list-style: none;
@@ -108,8 +113,6 @@ border-bottom: 1px solid $borderLineColor;
 @media screen and (min-width: 768px) {
     .contact {
         display: block;
-        padding-top: 5px;
-        padding-bottom: 5px;
     &__item {
         color: $secondaryTextColor;
         fill: $secondaryTextColor;

@@ -50,5 +50,29 @@
       margin: 0px;
     }
 }
-
-
+@media screen and (min-width: 768px) {
+  .description {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 354px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      &--right {
+          margin-right: 0px;    
+      }
+      &--last {
+        margin-bottom: 0px;
+          }
+      &--bottom {
+        margin-bottom: 0px;
+      }    
+           }
+    &__header {
+      justify-content: flex-start;
+    }     
+    
+}
+}

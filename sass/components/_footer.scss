@@ -1,6 +1,5 @@
 .page-footer {
     background-color: $primaryColorBackground;
-    max-width: 480px;
     margin: auto;
     &__wrapper {
         display: flex;
@@ -157,3 +156,17 @@ padding-bottom: 60px;
     align-items: center;
  }
 }
+@media screen and (min-width: 768px) {
+    .page-footer {
+        &__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__secondary-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 76px;
+        }
+        }
+  }

@@ -1,11 +1,6 @@
 .page-title{
 background-color: $primaryColorBackground;
-max-width: 480px;
 margin: auto; 
-}
-@media screen and (min-width: 768px) {
-    .page-title {
-    max-width: 768px;}
 }
 .title-field {
     max-width: 480px;
@@ -63,4 +58,24 @@ margin: auto;
         border: none;
     }
 }
-
+@media screen and (min-width: 768px) {
+    .title-field {
+        max-width: 768px;
+        background-image: url(../../images/images-tablet/background-tablet.jpg);
+        @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .title-field {
+            background-image: url(../../images/images-tablet/background-tablet@2x.jpg   ); 
+    }
+                 } 
+           &__name {
+            padding-left: 202px;
+            padding-right: 201px;
+                 }
+        &__button-container {
+            padding-left: 284px;
+            padding-right: 284px;
+                }
+               }
+             }
