@@ -76,3 +76,23 @@
     
 }
 }
+@media screen and (min-width: 1200px) {
+  .description {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &__item {
+      width: 270px;
+      margin-bottom: 0px;
+      &--right {
+        margin-right: 30px;  
+      }
+      &--last {
+        margin-right: 0px;
+      }
+    }
+    &__secondary-container {
+      padding: 25px 100px;
+    }
+  }
+  
+}
