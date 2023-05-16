@@ -17,18 +17,12 @@ margin: auto;
       background-repeat: no-repeat;
       padding-top: 118px;
       padding-bottom: 118px;
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        .title-field {
-            background-image: url(../../images/images-mobile/background-mobile@2x.jpg);
-        }
-      }
       &__name {
         color: $fouthTextColor;
         font-family: $primaryFont;
         font-weight: $fontLarge;
         font-size: 26px;
+        line-height: 1.61;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -58,17 +52,16 @@ margin: auto;
         border: none;
     }
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .title-field {
+      background-image: url(../../images/images-mobile/background-mobile@2x.jpg);
+  } }
 @media screen and (min-width: 768px) {
     .title-field {
         max-width: 768px;
         background-image: url(../../images/images-tablet/background-tablet.jpg);
-        @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        .title-field {
-            background-image: url(../../images/images-tablet/background-tablet@2x.jpg   ); 
-    }
-                 } 
            &__name {
             padding-left: 202px;
             padding-right: 201px;
@@ -79,3 +72,36 @@ margin: auto;
                 }
                }
              }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+            .title-field {
+                background-image: url(../../images/images-tablet/background-tablet@2x.jpg   ); 
+           }
+                        } 
+@media screen and (min-width: 1200px) {
+    .title-field {
+        max-width: 1600px;
+        background-image: url(../../images/background.jpg);
+        padding-top: 200px;
+        padding-bottom: 200px;
+      &__name {
+        padding-left: 252px;
+        padding-right: 252px;
+        font-size: 44px;
+        line-height: 1.36;
+        margin-bottom: 40px;
+      }
+      &__button-container {
+        padding-left: 500px;
+        padding-right: 500px;
+      }
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   .title-field {
+    background-image: url(../../images/background@2x.jpg);
+   }
+} 
