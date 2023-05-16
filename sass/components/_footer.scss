@@ -45,7 +45,7 @@
     }
 }
 .footer-social-media { 
-padding-bottom: 60px;
+margin-bottom: 60px;
 &__header {
     font-family: $primaryFont;
     font-weight: $fontBold;
@@ -169,4 +169,12 @@ padding-bottom: 60px;
             margin-left: 76px;
         }
         }
+    .footer-social-media {
+        padding-top: 65px;
+        margin-bottom: 138px;
+        margin-left: 144px;
+    }
+    .newsletter {
+        padding-left: 166px;
+    }     
   }

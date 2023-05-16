@@ -51,7 +51,7 @@
             font-size: 20px;
             line-height: 1.5;
             letter-spacing: 0.03em;
-            min-width: 350px;
+            min-width: 370px;
             margin-top: 2px;
             margin-bottom: 12px;
         }
@@ -206,6 +206,10 @@
                 line-height: 1.87;
                 letter-spacing: 0.06em;
                 cursor: pointer;
-            }
-        }
+            } }
+            
+@media screen and (min-width: 768px) {
+
+}
+    
     
